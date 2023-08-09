@@ -5,7 +5,7 @@ from book.models import BookStoreModel
 class BookStoreForm(forms.ModelForm):
     class Meta:
         model = BookStoreModel
-        fields = ["id", "book_name", "author", "category"]
+        fields = ["book_name", "author", "category"]
         widgets = {
             "book_name": forms.TextInput(
                 attrs={

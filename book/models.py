@@ -23,7 +23,7 @@ class BookStoreModel(models.Model):
         ("Satire", "Satire"),
         ("Anthology", "Anthology"),
     )
-    id = models.IntegerField(primary_key=True)
+    id = models.IntegerField(primary_key=True, auto_created=True)
     book_name = models.CharField(max_length=100, default="Unknown book")
     author = models.CharField(max_length=25, default="Unknown")
     category = models.CharField(max_length=25, choices=CATEGORY_CHOICES)
